@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstraCore — Bee Game</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #87ceeb;
+      overflow: hidden;
+      width: 100vw;
+      height: 100vh;
+      font-family: monospace;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      touch-action: none;
+    }
+    #menu-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+    #joystick-overlay {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 140px;
+      height: 140px;
+      z-index: 20;
+      pointer-events: auto;
+    }
+    #hud {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.65);
+      color: #ffdd44;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.8;
+      pointer-events: none;
+      border: 1px solid rgba(255, 221, 68, 0.3);
+      display: none;
+    }
+    /* Small viewports (phones) */
+    @media (max-width: 480px) {
+      #hud { font-size: 11px; padding: 4px 8px; }
+      #joystick-overlay { width: 120px; height: 120px; bottom: 16px; right: 16px; }
+    }
+    /* Medium viewports (tablets) */
+    @media (min-width: 481px) and (max-width: 1024px) {
+      #hud { font-size: 13px; }
+      #joystick-overlay { width: 130px; height: 130px; }
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/index-CeCyCggn.js"></script>
+</head>
+<body>
+  <canvas id="app-canvas"></canvas>
+  <div id="menu-overlay"></div>
+  <div id="joystick-overlay"></div>
+  <div id="hud"></div>
+</body>
+</html>

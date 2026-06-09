@@ -1,0 +1,23 @@
+{
+  "menu.title": "Bee Game",
+  "menu.start": "Start Game",
+  "hud.pollen": "Pollen: {current}/{max}",
+  "hud.timer": "Time: {seconds}s",
+  "hud.lives": "Lives: {count}",
+  "hive.deposit": "Press E to leave",
+  "hive.needMore": "Need more pollen",
+  "hub.title": "Hive Hub",
+  "hub.nextDay": "Go to Next Day",
+  "hub.day": "Day {day}",
+  "hub.buy": "BUY",
+  "hub.days": "Days: {count}",
+  "hub.pollen": "Pollen: {amount}",
+  "upgrade.speed": "Movement Speed",
+  "upgrade.capacity": "Carrying Weight",
+  "upgrade.dayTime": "Day Time",
+  "upgrade.lives": "Lives",
+  "upgrade.dash": "Dash",
+  "upgrade.magnet": "Magnet",
+  "upgrade.max": "MAX",
+  "death.returnToHive": "Return to hive"
+}
