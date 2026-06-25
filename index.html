@@ -6,23 +6,32 @@
   <title>AstraCore — Bee Game</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
     body {
+      /* Matches Pixi's clear color so any single-frame mismatch during a
+         viewport resize blends with the sky. */
       background: #87ceeb;
       overflow: hidden;
-      width: 100vw;
-      height: 100vh;
       font-family: monospace;
     }
     canvas {
+      /* Canvas fills the viewport — no letterbox bars. main.ts also calls
+         renderer.resize() on every viewport change to match. */
       display: block;
-      width: 100%;
-      height: 100%;
+      position: fixed;
+      inset: 0;
       touch-action: none;
     }
     #menu-overlay {
       position: fixed;
       inset: 0;
-      display: flex;
+      /* Hidden by default — only shown when the menu scene displays its
+         tutorial overlay. Default `display: flex` would silently swallow
+         every click on the Pixi canvas underneath. */
+      display: none;
       align-items: center;
       justify-content: center;
       z-index: 10;
@@ -61,7 +70,7 @@
       #joystick-overlay { width: 130px; height: 130px; }
     }
   </style>
-  <script type="module" crossorigin src="./assets/index-CQg57zg9.js"></script>
+  <script type="module" crossorigin src="./assets/index-DX0HLTiR.js"></script>
 </head>
 <body>
   <canvas id="app-canvas"></canvas>

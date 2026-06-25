@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "sourcePath": "crunchybite.ogg",
+      "outputPath": "crunchybite.ogg",
+      "sourceFormat": "ogg",
+      "targetFormat": "ogg",
+      "originalSize": 8424,
+      "convertedSize": 7967
+    },
+    {
+      "sourcePath": "crunchybite.ogg",
+      "outputPath": "crunchybite.mp3",
+      "sourceFormat": "ogg",
+      "targetFormat": "mp3",
+      "originalSize": 8424,
+      "convertedSize": 5805
+    }
+  ],
+  "summary": {
+    "totalConverted": 2,
+    "totalSkipped": 14,
+    "totalOriginalSize": 16848,
+    "totalConvertedSize": 13772
+  }
+}

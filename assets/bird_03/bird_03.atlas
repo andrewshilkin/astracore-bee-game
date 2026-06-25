@@ -1,0 +1,39 @@
+
+body.png
+size: 121, 116
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 0, 0
+  size: 121, 116
+  orig: 121, 116
+  offset: 0, 0
+  index: -1
+
+lwing.png
+size: 121, 116
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+lwing
+  rotate: false
+  xy: 0, 0
+  size: 121, 116
+  orig: 121, 116
+  offset: 0, 0
+  index: -1
+
+rwing.png
+size: 121, 116
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+rwing
+  rotate: false
+  xy: 0, 0
+  size: 121, 116
+  orig: 121, 116
+  offset: 0, 0
+  index: -1
